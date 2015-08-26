@@ -1,0 +1,64 @@
+<head>
+  <title>carprice</title>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+</head>
+
+<body>
+  {{> all}}
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+<template name="all">
+  <h1>
+    <span>Brands (3)</span>
+    <span>Categories (4)</span>
+  </h1>
+  <section class='car-list'>
+    <ul class='collection'>
+      {{#each cars}}
+        <li class='collection-item avatar'>
+          <img src="http://carsales.li.csnstatic.com/redbook/car/spec/audi32kz.jpg?height=292&padcolor=ffffff&aspect=FitWithin&width=440" alt="" class='circle' />
+          <span class='title'>{{model}}</span>
+          <span>{{price}}</span>
+
+          <p>{{brand}}<br>
+            {{doors}}, {{variant}}
+          </p>
+
+          <span class="secondary-content"><i class="material-icons">{{price}}</i></span>
+        </li>
+      {{/each}}
+    </ul>
+  </section>
+</template>
+
+<template name="dbtable">
+  <header>
+    <h1>Cars db</h1>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Price</th>
+        <th>Doors</th>
+        <th>Variant</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each cars}}
+      <tr>
+        <td>{{brand}}</td>
+        <td>{{model}}</td>
+        <td>{{price}}</td>
+        <td>{{doors}}</td>
+        <td>{{variant}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</template>
