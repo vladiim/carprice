@@ -1,0 +1,13 @@
+.car-list > ul > li.collection-item.avatar {
+  padding-left: 5px;
+}
+
+.car-list > ul > li.collection-item.avatar > .secondary-content {
+  top: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+}

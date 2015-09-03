@@ -19,15 +19,12 @@
     <ul class='collection'>
       {{#each cars}}
         <li class='collection-item avatar'>
-          <img src="http://carsales.li.csnstatic.com/redbook/car/spec/audi32kz.jpg?height=292&padcolor=ffffff&aspect=FitWithin&width=440" alt="" class='circle' />
           <span class='title'>{{model}}</span>
-          <span>{{price}}</span>
 
-          <p>{{brand}}<br>
-            {{doors}}, {{variant}}
+          <p>{{brand}}, {{doors}} door, {{variant}}
           </p>
 
-          <span class="secondary-content"><i class="material-icons">{{price}}</i></span>
+          <span class="secondary-content">{{currencyPrice}}</span>
         </li>
       {{/each}}
     </ul>
