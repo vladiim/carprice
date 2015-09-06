@@ -1,8 +1,8 @@
-.car-list > ul > li.collection-item.avatar {
+.collection li.collection-item.avatar.car {
   padding-left: 5px;
 }
 
-.car-list > ul > li.collection-item.avatar > .secondary-content {
+.collection li.collection-item.avatar.car > .secondary-content {
   top: 10px;
   color: black;
   font-weight: bold;
@@ -10,4 +10,8 @@
 
 .title {
   font-weight: bold;
+}
+
+.category-card.active {
+  height: 500px;
 }
