@@ -13,18 +13,44 @@
 }
 
 .card.category-card {
-  display: block;
-}
-
-.card-content {
+  -webkit-transition: height 500ms ease-in;
+    -moz-transition: height 500ms ease-in;
+      -o-transition: height 500ms ease-in;
+         transition: height 500ms ease-in;
   height: 120px;
 }
 
-.card-content.active {
+.category-card.active {
   height: 500px;
   overflow-y: scroll;
 }
 
 .card.category-card .card-title {
   color: black;
+}
+
+.card .card-content .card-title p {
+  font-size: 60%;
+  line-height: 20px;
+  margin-left: 10px;
+}
+
+.card-title h4 {
+  margin: 1.14rem 0 -1rem 10px;
+}
+
+.card-title .btn-floating {
+  margin: -40px 0 0 50px;
+}
+
+.card-title .row .col {
+  padding: 0 0.25rem;
+}
+
+.container {
+  width: 100% !important;
+}
+
+media only screen and (min-width: 601px) {
+  width: 100% !important;
 }
